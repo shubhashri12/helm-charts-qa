@@ -1,6 +1,6 @@
 # Contribution guidelines
 
-First of all: Thank you! We really appreciate your efforts to make helm-charts better ❤️
+First of all: Thank you! We really appreciate your efforts to make helm-charts-qa better ❤️
 
 Create or find an issue you would like to implement:
 -   issues with the label [helm-wanted](https://github.com/logicmonitor/helm-charts/labels/help%20wanted) are ready to be picked up and implemented.
@@ -8,13 +8,13 @@ Create or find an issue you would like to implement:
 -   create your issue and wait for comments from maintainers
 -   once the issue is discussed and assigned to you – feel free to implement
 
-## Developing helm-charts
+## Developing helm-charts-qa
 
 1.  Prepare project (Install [Chart-Releaser](https://github.com/helm/chart-releaser))
 
     ```sh
-    git clone https://github.com/logicmonitor/helm-charts
-    cd helm-charts
+    git clone https://github.com/logicmonitor/helm-charts-qa
+    cd helm-charts-qa
     
     cr package charts/<chart-name>
     ```
