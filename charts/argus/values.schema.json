@@ -2,8 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "http://example.com/example.json",
   "type": "object",
-  "title": "The root schema",
-  "description": "The root schema comprises the entire JSON document.",
+  "title": "Argus Helm Chart Configuration Schema",
+  "description": "The Argus Helm Chart Configuration Schema",
   "default": {},
   "examples": [
     {
@@ -182,7 +182,7 @@
       "$id": "#/properties/accessKey",
       "type": "string",
       "title": "Logicmonitor API Token accessKey",
-      "description": "# The LogicMonitor API key.\nNOTE: Always add surrounding double quotes to avoid special character parsing errors",
+      "description": "The LogicMonitor API key.\nNOTE: Always add surrounding double quotes to avoid special character parsing errors",
       "default": "",
       "examples": [
         ""
@@ -192,7 +192,7 @@
       "$id": "#/properties/account",
       "type": "string",
       "title": "Logicmonitor account name",
-      "description": "The LogicMonitor account name.\nValue should be trimmed from URL ___.logicmonitor.com\nexample: say, lmqauat.logicmonitor.com then \"lmqauat\" should be valid here",
+      "description": "The LogicMonitor account name.\nValue should be trimmed from URL \"___.logicmonitor.com\"\nexample: say, lmqauat.logicmonitor.com then \"lmqauat\" should be valid value",
       "default": "",
       "examples": [
         "lmqauat"
@@ -202,7 +202,7 @@
       "$id": "#/properties/clusterName",
       "type": "string",
       "title": "Friendly Cluster Name",
-      "description": "A unique name given to the cluster's resource group.\nNOTE: do not change name once application deployed in cluster, breaks correlation at multiple places\nexample: Organised Resource group name of kubernetes resource tree generated as \"Kubernetes Cluster: <clusterName>\"",
+      "description": "A unique name given to the cluster's resource group.\nNOTE: do not change name once application deployed in cluster. If changed, breaks correlation at multiple places\nexample: Organised Resource group name of kubernetes resource tree generated as \"Kubernetes Cluster: <clusterName>\"",
       "default": "",
       "examples": [
         ""
@@ -212,7 +212,7 @@
       "$id": "#/properties/clusterTreeParentID",
       "type": "integer",
       "title": "The clusterTreeParentID",
-      "description": "clusterTreeParentID is a parent group ID underneath the organised kubernetes resource tree gets created",
+      "description": "clusterTreeParentID is a parent static resource group ID underneath the organised kubernetes resource tree gets created.\nA static resource group with the mentioned ID should exit beforehand.",
       "default": 1,
       "minimum": 1,
       "examples": [
@@ -222,8 +222,8 @@
     "image": {
       "$id": "#/properties/image",
       "type": "object",
-      "title": "The image schema",
-      "description": "An explanation about the purpose of this instance.",
+      "title": "Argus Docker Image Schema",
+      "description": "The image holds the Argus docker image details.",
       "default": {},
       "examples": [
         {
@@ -238,8 +238,8 @@
         "registry": {
           "$id": "#/properties/image/properties/registry",
           "type": "string",
-          "title": "The registry schema",
-          "description": "Container Image Registry",
+          "title": "Argus Image Registry Schema",
+          "description": "The Docker Registry from which Argus image to pull.\ndefaults to empty value.",
           "default": "",
           "minLength": 0,
           "examples": [
@@ -249,8 +249,8 @@
         "repository": {
           "$id": "#/properties/image/properties/repository",
           "type": "string",
-          "title": "The repository schema",
-          "description": "An explanation about the purpose of this instance.",
+          "title": "Argus Image Repository Schema",
+          "description": "The Docker Repository Name for Argus Image",
           "default": "logicmonitor/argus",
           "minLength": 1,
           "examples": [
@@ -260,8 +260,8 @@
         "pullPolicy": {
           "$id": "#/properties/image/properties/pullPolicy",
           "type": "string",
-          "title": "pullPolicy",
-          "description": "Overrides the image tag whose default is the chart appVersion.",
+          "title": "The Argus pullPolicy Schema",
+          "description": "Overrides the image pullPolicy.\nDefaults to Always.",
           "default": "Always",
           "enum": [
             "Always",
@@ -276,8 +276,8 @@
         "tag": {
           "$id": "#/properties/image/properties/tag",
           "type": "string",
-          "title": "The tag schema",
-          "description": "An explanation about the purpose of this instance.",
+          "title": "The Argus Image tag schema",
+          "description": "The Argus Docker Image Tag",
           "default": "",
           "examples": [
             ""
@@ -340,8 +340,8 @@
     "resources": {
       "$id": "#/properties/resources",
       "type": "object",
-      "title": "The resources schema",
-      "description": "resources are Pod resource limits",
+      "title": "The Argus resource limits schema",
+      "description": "The Argus pod resource limits",
       "default": {},
       "examples": [
         {
@@ -381,7 +381,7 @@
     "labels": {
       "$id": "#/properties/labels",
       "type": "object",
-      "title": "extraLabels",
+      "title": "The Argus extra labels schema",
       "description": "Labels to apply on all objects created by Argus. Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels",
       "default": {},
       "examples": [
@@ -395,7 +395,7 @@
     "annotations": {
       "$id": "#/properties/annotations",
       "type": "object",
-      "title": "extraAnnotations",
+      "title": "The Argus extra annotations schema",
       "description": "Annotations to apply on all objects created by Argus. Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations",
       "default": {},
       "examples": [
@@ -410,7 +410,7 @@
       "$id": "#/properties/replicas",
       "type": "integer",
       "title": "The replicas schema",
-      "description": "Replicas - defaults to 1, param is just for development purpose, do not increase more than one replicas in production",
+      "description": "Argus Pod Replicas - defaults to 1, param is just for development purpose, do not increase more than one replicas in production",
       "default": 1,
       "minimum": 0,
       "maximum": 1,
@@ -422,7 +422,7 @@
       "$id": "#/properties/resourceContainerID",
       "type": "integer",
       "title": "The resourceContainerID schema",
-      "description": "A parent group id that will hold all cluster resources under it. This is useful when Argus is installed with non-admin user's token.",
+      "description": "The resourceContainerID is recommended to when Argus is being installed with non-admin user credentials.\nThe resourceContainerID is A parent resource group id that will hold all cluster resources under it.",
       "default": 1,
       "minimum": 1,
       "examples": [
@@ -433,7 +433,7 @@
       "$id": "#/properties/log",
       "type": "object",
       "title": "Log",
-      "description": "Log Configurations",
+      "description": "The Argus Log Configurations Schema",
       "default": {},
       "examples": [
         {
@@ -446,8 +446,8 @@
         "level": {
           "$id": "#/properties/log/properties/level",
           "type": "string",
-          "title": "log.level",
-          "description": "Log Level",
+          "title": "The Log Level for Argus Schema",
+          "description": "The Log Level for Argus",
           "default": "info",
           "enum": [
             "info",
@@ -469,8 +469,8 @@
     "collectorsetcontroller": {
       "$id": "#/properties/collectorsetcontroller",
       "type": "object",
-      "title": "collectorsetcontroller",
-      "description": "Collectorset-Controller Configurations",
+      "title": "The collectorsetcontroller schema",
+      "description": "The Collectorset-Controller Configurations",
       "default": {},
       "examples": [
         {
@@ -484,8 +484,8 @@
         "address": {
           "$id": "#/properties/collectorsetcontroller/properties/address",
           "type": "string",
-          "title": "collectorsetController",
-          "description": "Collectorset-controller grpc service address",
+          "title": "The CollectorsetController Address Schema",
+          "description": "The Collectorset-controller grpc service address",
           "default": "collectorset-controller",
           "minLength": 1,
           "examples": [
@@ -496,7 +496,7 @@
           "$id": "#/properties/collectorsetcontroller/properties/port",
           "type": "integer",
           "title": "port",
-          "description": "Port service exposes",
+          "description": "The Collectorset-controller grpc service port",
           "minimum": 2,
           "default": 50000,
           "examples": [
@@ -509,8 +509,8 @@
     "proxy": {
       "$id": "#/properties/proxy",
       "type": "object",
-      "title": "proxy",
-      "description": "Http/s proxy",
+      "title": "The proxy schema",
+      "description": "The Http/s proxy for Argus",
       "default": {},
       "examples": [
         {
@@ -525,8 +525,8 @@
         "url": {
           "$id": "#/properties/proxy/properties/url",
           "type": "string",
-          "title": "url",
-          "description": "Proxy service endpoint",
+          "title": "The Proxy Server URL Schema",
+          "description": "The Proxy Server's URL",
           "default": "",
           "examples": [
             ""
@@ -535,8 +535,8 @@
         "user": {
           "$id": "#/properties/proxy/properties/user",
           "type": "string",
-          "title": "The user schema",
-          "description": "Proxy service user",
+          "title": "The Proxy Server's User schema",
+          "description": "The Proxy Server's User",
           "default": "",
           "examples": [
             ""
@@ -545,8 +545,8 @@
         "pass": {
           "$id": "#/properties/proxy/properties/pass",
           "type": "string",
-          "title": "pass",
-          "description": "Proxy service password",
+          "title": "The Proxy Server's Password schema",
+          "description": "The Proxy Server's Password",
           "default": "",
           "examples": [
             ""
@@ -558,8 +558,8 @@
     "etcdDiscoveryToken": {
       "$id": "#/properties/etcdDiscoveryToken",
       "type": "string",
-      "title": "etcdDiscoveryToken",
-      "description": "ETCD discovery token",
+      "title": "The ETCD DiscoveryToken Schema",
+      "description": "The ETCD DiscoveryToken",
       "default": "",
       "examples": [
         ""
@@ -568,7 +568,7 @@
     "ignoreSSL": {
       "$id": "#/properties/ignoreSSL",
       "type": "boolean",
-      "title": "ignoreSSL",
+      "title": "The ignoreSSL Schema",
       "description": "Set flag to ignore ssl/tls validation",
       "default": false,
       "examples": [
@@ -578,8 +578,8 @@
     "daemons": {
       "$id": "#/properties/daemons",
       "type": "object",
-      "title": "daemons",
-      "description": "Daemon configurations",
+      "title": "The Argus Daemon configurations Schema",
+      "description": "The Argus Daemon configurations",
       "default": {},
       "examples": [
         {
@@ -608,8 +608,8 @@
         "lmResourceSweeper": {
           "$id": "#/properties/daemons/properties/lmResourceSweeper",
           "type": "object",
-          "title": "lmResourceSweeper",
-          "description": "LM Resource sweeper configurations",
+          "title": "The LM Resource sweeper configurations Schema",
+          "description": "The LM Resource sweeper configurations",
           "default": {},
           "examples": [
             {
@@ -622,11 +622,11 @@
             "interval": {
               "$id": "#/properties/daemons/properties/lmResourceSweeper/properties/interval",
               "type": "string",
-              "title": "interval",
-              "description": "Execution run interval",
+              "title": "The LM Resource sweeper Interval Schema",
+              "description": "The LM Resource sweeper Run Interval Duration",
               "default": "10m",
               "examples": [
-                "10m"
+                "0h10m0s"
               ],
               "pattern": "^(\\d+h)?(\\d+m)?(\\d+s)?(\\d+[u]s)?(\\d+ns)?$"
             }
@@ -636,8 +636,8 @@
         "lmCacheSync": {
           "$id": "#/properties/daemons/properties/lmCacheSync",
           "type": "object",
-          "title": "lmCacheSync",
-          "description": "Cache Sync using LM resources configurations",
+          "title": "The Cache Sync using LM resources configurations Schema",
+          "description": "The Cache Sync using LM resources configurations",
           "default": {},
           "examples": [
             {
@@ -650,11 +650,11 @@
             "interval": {
               "$id": "#/properties/daemons/properties/lmCacheSync/properties/interval",
               "type": "string",
-              "title": "interval",
-              "description": "Execution run interval",
+              "title": "The Cache Sync using LM resources Interval Schema",
+              "description": "The Cache Sync using LM resources Run Interval Duration",
               "default": "1h",
               "examples": [
-                "1h"
+                "1h0m0s"
               ],
               "pattern": "^(\\d+h)?(\\d+m)?(\\d+s)?(\\d+[u]s)?(\\d+ns)?$"
             }
@@ -664,8 +664,8 @@
         "worker": {
           "$id": "#/properties/daemons/properties/worker",
           "type": "object",
-          "title": "worker",
-          "description": "Worker configurations",
+          "title": "The Worker configurations Schema",
+          "description": "The Worker configurations",
           "default": {},
           "examples": [
             {
@@ -678,8 +678,8 @@
             "poolSize": {
               "$id": "#/properties/daemons/properties/worker/properties/poolSize",
               "type": "integer",
-              "title": "The poolSize schema",
-              "description": "number of workers in a pool",
+              "title": "The Worker poolSize schema",
+              "description": "The Number of workers in a pool",
               "default": 10,
               "minimum": 1,
               "examples": [
@@ -692,8 +692,8 @@
         "watcher": {
           "$id": "#/properties/daemons/properties/watcher",
           "type": "object",
-          "title": "watcher",
-          "description": "Kubernetes watcher configurations",
+          "title": "The Kubernetes watcher configurations Schema",
+          "description": "The Kubernetes watcher configurations",
           "default": {},
           "examples": [
             {
@@ -712,18 +712,18 @@
               "$id": "#/properties/daemons/properties/watcher/properties/bulkSyncInterval",
               "type": "string",
               "title": "bulkSyncInterval",
-              "description": "Execution run interval",
+              "description": "The Bulk Discovery Run Interval Duration",
               "default": "30m",
               "examples": [
-                "30m"
+                "0h30m0s"
               ],
               "pattern": "^(\\d+h)?(\\d+m)?(\\d+s)?(\\d+[u]s)?(\\d+ns)?$"
             },
             "runner": {
               "$id": "#/properties/daemons/properties/watcher/properties/runner",
               "type": "object",
-              "title": "The runner schema",
-              "description": "configurations for parallel runners to process watcher events",
+              "title": "The runner configurations schema",
+              "description": "The configurations for parallel runners to process watcher events",
               "default": {},
               "examples": [
                 {
@@ -737,8 +737,8 @@
                 "poolSize": {
                   "$id": "#/properties/daemons/properties/watcher/properties/runner/properties/poolSize",
                   "type": "integer",
-                  "title": "The poolSize schema",
-                  "description": "Number of runner in a pool",
+                  "title": "The Runner poolSize schema",
+                  "description": "The Number runners in a pool",
                   "default": 10,
                   "minimum": 1,
                   "examples": [
@@ -748,8 +748,8 @@
                 "backPressureQueueSizePerRunner": {
                   "$id": "#/properties/daemons/properties/watcher/properties/runner/properties/backPressureQueueSizePerRunner",
                   "type": "integer",
-                  "title": "The backPressureQueueSizePerRunner schema",
-                  "description": "Number of events to queue per runner",
+                  "title": "The Number of events to queue per runner schema",
+                  "description": "The Number of events to queue per runner",
                   "default": 10,
                   "minimum": 1,
                   "examples": [
@@ -762,10 +762,10 @@
               "$id": "#/properties/daemons/properties/watcher/properties/sysIpsWaitTimeout",
               "type": "string",
               "title": "The sysIpsWaitTimeout schema",
-              "description": "in case of IP update, need to wait till Logicmonitor portal copies system.hostname value into system.ips",
+              "description": "The sysIpsWaitTimeout is a timout for argus to wait till Logicmonitor portal copies system.hostname value into system.ips for updated IP of resource",
               "default": "5m",
               "examples": [
-                "5m"
+                "0h5m0s"
               ],
               "pattern": "^(\\d+h)?(\\d+m)?(\\d+s)?(\\d+[u]s)?(\\d+ns)?$"
             }
@@ -779,7 +779,7 @@
       "$id": "#/properties/monitoring",
       "type": "object",
       "title": "The monitoring schema",
-      "description": "Monitoring settings",
+      "description": "The Monitoring settings",
       "default": {},
       "examples": [
         {
@@ -811,8 +811,8 @@
     "lm": {
       "$id": "#/properties/lm",
       "type": "object",
-      "title": "The lm schema",
-      "description": "Settings reflect on Logicmonitor Portal",
+      "title": "The Logicmonitor Portal Configurations",
+      "description": "The Settings/Configurations which reflect on Logicmonitor Portal",
       "default": {},
       "examples": [
         {
@@ -845,8 +845,8 @@
         "lmlogs": {
           "$id": "#/properties/lm/properties/lmlogs",
           "type": "object",
-          "title": "The lmlogs schema",
-          "description": "Logicmonitor Logs collection settings",
+          "title": "The LMLogs schema",
+          "description": "The Logicmonitor Logs collection settings",
           "default": {},
           "examples": [
             {
@@ -864,8 +864,8 @@
             "k8sevent": {
               "$id": "#/properties/lm/properties/lmlogs/properties/k8sevent",
               "type": "object",
-              "title": "The k8sevent schema",
-              "description": "Kubernetes Events collection configurations",
+              "title": "The Kubernetes Events schema",
+              "description": "The Kubernetes Events collection configurations",
               "default": {},
               "examples": [
                 {
@@ -937,7 +937,7 @@
               "$id": "#/properties/lm/properties/resource/properties/globalDeleteAfterDuration",
               "type": "string",
               "title": "The globalDeleteAfterDuration schema",
-              "description": "Global scheduled delete duration to delete resources after, values must if in ISO8601 format",
+              "description": "Global scheduled delete duration to delete resources after, values must be in ISO8601 format",
               "default": "P0DT0H0M0S",
               "examples": [
                 "P0DT0H0M0S"
@@ -948,7 +948,7 @@
               "$id": "#/properties/lm/properties/resource/properties/alerting",
               "type": "object",
               "title": "The alerting schema",
-              "description": "Alerting settings to apply on resource groups, only cluster scoped resources are valid here, other gets ignored",
+              "description": "Alerting settings to apply on resource groups.\nOnly cluster scoped resources are valid here.\nNamespace scoped resources will get ignored if set any.",
               "default": {},
               "examples": [
                 {
@@ -962,7 +962,7 @@
                   "$id": "#/properties/lm/properties/resource/properties/alerting/properties/disable",
                   "type": "array",
                   "title": "The disable schema",
-                  "description": "Set of resources to disable alerting on",
+                  "description": "Set of resources to set disable upon resource groups.\nOnly cluster scoped resources are valid here.\nNamespace scoped resources will get ignored if set any.",
                   "default": [],
                   "examples": [
                     []
@@ -1020,7 +1020,7 @@
                   "$id": "#/properties/lm/properties/resourceGroup/properties/extraProps/properties/cluster",
                   "type": "array",
                   "title": "The cluster schema",
-                  "description": "Properties to apply upon cluster tree root group",
+                  "description": "Properties to apply upon cluster tree root resource group",
                   "default": [],
                   "examples": [
                     []
@@ -1034,7 +1034,7 @@
                 "nodes": {
                   "$id": "#/properties/lm/properties/resourceGroup/properties/extraProps/properties/nodes",
                   "type": "array",
-                  "title": "Properties to apply upon node resource group",
+                  "title": "Properties to apply upon Nodes resource group",
                   "description": "",
                   "default": [],
                   "examples": [
@@ -1050,7 +1050,7 @@
                   "$id": "#/properties/lm/properties/resourceGroup/properties/extraProps/properties/etcd",
                   "type": "array",
                   "title": "The etcd schema",
-                  "description": "Properties to apply upon etcd resource group",
+                  "description": "Properties to apply upon ETCD resource group",
                   "default": [],
                   "examples": [
                     []
@@ -1133,7 +1133,7 @@
       "$id": "#/properties/debug",
       "type": "object",
       "title": "The debug schema",
-      "description": "Application debug configurations",
+      "description": "The Application debugging configurations",
       "default": {},
       "examples": [
         {
