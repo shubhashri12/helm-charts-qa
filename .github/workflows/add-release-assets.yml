@@ -61,7 +61,7 @@ jobs:
           ref: ${{ github.ref }}
           running-workflow-name: "pages-build-deployment"
           repo-token: ${{ secrets.CHART_RELEASE_TOKEN }}
-          wait-interval: 100
+          wait-interval: 10
 
       - name: Pull Charts
         if: ${{ steps.get_chart.outputs.chartname }} == "lm-container"
