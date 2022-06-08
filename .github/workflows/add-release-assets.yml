@@ -55,7 +55,7 @@ jobs:
         uses: azure/setup-helm@v1
         with:
           version: v3.5.4
-      - name: Wait for tests to succeed
+      - name: Wait for gh-pages to publish index.yaml
         uses: lewagon/wait-on-check-action@v1.0.0
         with:
           ref: "gh-pages"
@@ -68,7 +68,8 @@ jobs:
         run: |
           helm repo add logicmonitor-qa https://logicmonitor.github.io/helm-charts-qa
           helm pull logicmonitor-qa/lm-container --untar --version ${{ steps.get_chart.outputs.chartversion }}
-          cd lm-container && ../scripts/lmui/lmui > lm-container-ui-jsonpaths.json && cd ..
+          ./scripts/lmui/lmui > lm-container-ui-jsonpaths.json
+          cat lm-container-ui-jsonpaths.json
       - name: add ui template to release asset
         uses: actions/upload-release-asset@v1.0.2
         if: ${{ steps.get_chart.outputs.chartname }} == "lm-container"
@@ -76,6 +77,6 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           upload_url: ${{ steps.get_release.outputs.upload_url }}
-          asset_path: ./lm-container/lm-container-ui-jsonpaths.json
+          asset_path: ./lm-container-ui-jsonpaths.json
           asset_name: lm-container-ui-jsonpaths.json
           asset_content_type: text/plain
