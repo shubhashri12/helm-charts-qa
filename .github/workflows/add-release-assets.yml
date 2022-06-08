@@ -58,7 +58,7 @@ jobs:
       - name: Wait for tests to succeed
         uses: lewagon/wait-on-check-action@v1.0.0
         with:
-          ref: ${{ github.ref }}
+          ref: "gh-pages"
           running-workflow-name: "pages-build-deployment"
           repo-token: ${{ secrets.CHART_RELEASE_TOKEN }}
           wait-interval: 10
