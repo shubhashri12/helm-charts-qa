@@ -55,6 +55,14 @@ jobs:
         uses: azure/setup-helm@v1
         with:
           version: v3.5.4
+      - name: Wait for tests to succeed
+        uses: lewagon/wait-on-check-action@v1.0.0
+        with:
+          ref: ${{ github.ref }}
+          running-workflow-name: "pages-build-deployment"
+          repo-token: ${{ secrets.CHART_RELEASE_TOKEN }}
+          wait-interval: 100
+
       - name: Pull Charts
         if: ${{ steps.get_chart.outputs.chartname }} == "lm-container"
         run: |
