@@ -63,14 +63,14 @@ jobs:
           repo-token: ${{ secrets.CHART_RELEASE_TOKEN }}
           wait-interval: 10
 
-      - name: Pull Charts
+      - name: Pull Charts and Generate UI Template
         if: ${{ steps.get_chart.outputs.chartname }} == "lm-container"
         run: |
           helm repo add logicmonitor-qa https://logicmonitor.github.io/helm-charts-qa
           helm pull logicmonitor-qa/lm-container --untar --version ${{ steps.get_chart.outputs.chartversion }}
           ./scripts/lmui/lmui > lm-container-ui-jsonpaths.json
           cat lm-container-ui-jsonpaths.json
-      - name: add ui template to release asset
+      - name: Upload ui template to release asset
         uses: actions/upload-release-asset@v1.0.2
         if: ${{ steps.get_chart.outputs.chartname }} == "lm-container"
         env:
