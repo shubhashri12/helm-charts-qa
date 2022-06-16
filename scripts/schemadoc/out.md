@@ -3,123 +3,6 @@
  %!s(<nil>)
 
 
-## Collectorset Controller Helm chart Values Schema
- Collectorset Controller Helm chart Values Schema
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.fullnameOverride | The fullnameOverride schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.nodeSelector | The nodeSelector schema | NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/ |<br>| .collectorset-controller.labels | The labels schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.enabled | %!s(<nil>) | Defined for umbrella chart but unused here. |<br>| .collectorset-controller.accessKey | The accessKey schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.affinity | The affinity schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.priorityClassName | The priorityClassName schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.ignoreSSL | The ignoreSSL schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.accessID | The accessID schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.nameOverride | The nameOverride schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.annotations | The annotations schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.account | The account schema | An explanation about the purpose of this instance. |<br>
-## The log schema
- An explanation about the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.log.level | The level schema | An explanation about the purpose of this instance. |<br>
-## The proxy schema
- An explanation about the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.proxy.url | The url schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.proxy.user | The user schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.proxy.pass | The pass schema | An explanation about the purpose of this instance. |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.global.collectorsetServiceNameSuffix | %!s(<nil>) | Suffix to be added to .Release.name to generate Collectorset controller service name.
-Keep it empty while installing this chart individually, umbrella chart uses this to generate unique name across |<br>
-## %!s(<nil>)
- ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
-
-
-## The image schema
- An explanation about the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.global.image.registry | The registry schema | Container Image Registry |<br>| .collectorset-controller.global.image.pullPolicy | pullPolicy | Overrides the image tag whose default is the chart appVersion. |<br>
-## The proxy schema
- An explanation about the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.global.proxy.user | The user schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.global.proxy.pass | The pass schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.global.proxy.url | The url schema | An explanation about the purpose of this instance. |<br>
-## %!s(<nil>)
- ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
-
-
-## %!s(<nil>)
- The container probe configuration schema
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.probe.enabled | %!s(<nil>) | Enables container probes |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.probe.startup.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the argus startup |<br>| .collectorset-controller.probe.startup.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.probe.liveness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the argus startup |<br>| .collectorset-controller.probe.liveness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.probe.readiness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the argus startup |<br>| .collectorset-controller.probe.readiness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
-## The tolerations schema
- An explanation about the purpose of this instance.
-
-
-## The serviceAccount schema
- An explanation about the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.serviceAccount.create | The create schema | An explanation about the purpose of this instance. |<br>
-## The rbac schema
- An explanation about the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.rbac.create | The create schema | An explanation about the purpose of this instance. |<br>
-## The image schema
- An explanation about the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .collectorset-controller.image.registry | The registry schema | Container Image Registry |<br>| .collectorset-controller.image.repository | The repository schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.image.pullPolicy | The pullPolicy schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.image.tag | The tag schema | An explanation about the purpose of this instance. |<br>
 ## Argus Helm Chart Configuration Schema
  The Argus Helm Chart Configuration Schema
 
@@ -127,34 +10,22 @@ Keep it empty while installing this chart individually, umbrella chart uses this
 
 | :---- | :---- | :---- |
 
-| .argus.accessKey | Logicmonitor API Token accessKey | The LogicMonitor API key.
-NOTE: Ensure to add surrounding double quotes to avoid special character parsing errors. |<br>| .argus.account | Logicmonitor account name | The LogicMonitor account name.nValue should be trimmed from URL "___.logicmonitor.com"
-example: lmqauat.logicmonitor.com then "lmqauat" must be a valid value. |<br>| .argus.replicas | The replicas schema | Argus Pod Replicas - defaults to 1, parameter is just for development purpose, do not increase more than one replicas in production |<br>| .argus.ignoreSSL | The ignoreSSL Schema | Set flag to ignore ssl/tls validation. |<br>| .argus.fullnameOverride | The fullnameOverride schema | Describes the purpose of this instance. |<br>| .argus.clusterName | Friendly Cluster Name | The unique name to give to the cluster's resource group.
+| .argus.ignoreSSL | The ignoreSSL Schema | Set flag to ignore ssl/tls validation. |<br>| .argus.annotations | The Argus extra annotations schema | Annotations to apply on all objects created by Argus. Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations |<br>| .argus.replicas | The replicas schema | Argus Pod Replicas - defaults to 1, parameter is just for development purpose, do not increase more than one replicas in production |<br>| .argus.fullnameOverride | The fullnameOverride schema | Describes the purpose of this instance. |<br>| .argus.account | Logicmonitor account name | The LogicMonitor account name.nValue should be trimmed from URL "___.logicmonitor.com"
+example: lmqauat.logicmonitor.com then "lmqauat" must be a valid value. |<br>| .argus.labels | The Argus extra labels schema | Labels to apply on all objects created by Argus. Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels |<br>| .argus.resourceContainerID | The resourceContainerID schema | You must use the resourceContainerID when you install Argus as a non-admin user. 
+The resourceContainerID is a parent resource group id that holds all cluster resources under it. |<br>| .argus.accessID | Logicmonitor API Token accessID | The LogicMonitor API key ID.
+NOTE: Ensure to add surrounding double quotes to avoid special character parsing errors. |<br>| .argus.clusterName | Friendly Cluster Name | The unique name to give to the cluster's resource group.
 NOTE: You must not change the name once the application is deployed in the cluster. If changed, breaks correlation at multiple places
-example: Organised Resource group name of Kubernetes resource tree, is generated as "Kubernetes Cluster: <clusterName>" |<br>| .argus.affinity | affinity | Affinity allows you to constrain which nodes your pod is eligible to be scheduled on. |<br>| .argus.etcdDiscoveryToken | The ETCD DiscoveryToken Schema | The ETCD DiscoveryToken. |<br>| .argus.clusterTreeParentID | The clusterTreeParentID | clusterTreeParentID is a parent static resource group ID under which the organised Kubernetes resource tree gets created.
-A static resource group with the mentioned ID should exit beforehand. |<br>| .argus.accessID | Logicmonitor API Token accessID | The LogicMonitor API key ID.
-NOTE: Ensure to add surrounding double quotes to avoid special character parsing errors. |<br>| .argus.resourceContainerID | The resourceContainerID schema | You must use the resourceContainerID when you install Argus as a non-admin user. 
-The resourceContainerID is a parent resource group id that holds all cluster resources under it. |<br>| .argus.labels | The Argus extra labels schema | Labels to apply on all objects created by Argus. Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels |<br>| .argus.annotations | The Argus extra annotations schema | Annotations to apply on all objects created by Argus. Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations |<br>| .argus.kube-state-metrics | %!s(<nil>) | %!s(<nil>) |<br>| .argus.enabled | %!s(<nil>) | Defined for umbrella chart but unused here. |<br>| .argus.priorityClassName | priorityClassName | The priority class name for Pod priority. If the priorityClassName parameter is enabled, then PriorityClass resource is created, or the Pod is rejected. |<br>| .argus.nameOverride | The nameOverride schema | Describes the purpose of this instance. |<br>| .argus.nodeSelector | nodeSelector | NodeSelector is a selector, which must be set to true for the pod to fit on a node. The selector must match the node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/ |<br>
-## The proxy schema
- The Http/s proxy for Argus
+example: Organised Resource group name of Kubernetes resource tree, is generated as "Kubernetes Cluster: <clusterName>" |<br>| .argus.nodeSelector | nodeSelector | NodeSelector is a selector, which must be set to true for the pod to fit on a node. The selector must match the node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/ |<br>| .argus.etcdDiscoveryToken | The ETCD DiscoveryToken Schema | The ETCD DiscoveryToken. |<br>| .argus.nameOverride | The nameOverride schema | Describes the purpose of this instance. |<br>| .argus.enabled | %!s(<nil>) | Defined for umbrella chart but unused here. |<br>| .argus.accessKey | Logicmonitor API Token accessKey | The LogicMonitor API key.
+NOTE: Ensure to add surrounding double quotes to avoid special character parsing errors. |<br>| .argus.affinity | affinity | Affinity allows you to constrain which nodes your pod is eligible to be scheduled on. |<br>| .argus.clusterTreeParentID | The clusterTreeParentID | clusterTreeParentID is a parent static resource group ID under which the organised Kubernetes resource tree gets created.
+A static resource group with the mentioned ID should exit beforehand. |<br>| .argus.priorityClassName | priorityClassName | The priority class name for Pod priority. If the priorityClassName parameter is enabled, then PriorityClass resource is created, or the Pod is rejected. |<br>| .argus.kube-state-metrics | %!s(<nil>) | %!s(<nil>) |<br>
+## The collectorsetcontroller schema
+ The Collectorset-Controller Configurations
 
 | Path | Title | Description |
 
 | :---- | :---- | :---- |
 
-| .argus.proxy.url | The Proxy Server URL Schema | The Proxy Server's URL |<br>| .argus.proxy.user | The Proxy Server's User schema | User for the Proxy Server. |<br>| .argus.proxy.pass | The Proxy Server's Password schema | Password for the Proxy Server |<br>
-## %!s(<nil>)
- ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
-
-
-## The selfMonitor schema
- Configurations to expose self monitor metrics in Openmetrics format.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.selfMonitor.enable | The enable schema | Once the property is enabled, self monitor metrics are displayed.  |<br>| .argus.selfMonitor.port | The port schema | port number to expose self monitor "/metrics" endpoint |<br>
+| .argus.collectorsetcontroller.address | The CollectorsetController Address Schema | The Collectorset-controller grpc service address |<br>| .argus.collectorsetcontroller.port | port | The Collectorset-controller grpc service port |<br>
 ## The Logicmonitor Portal Configurations
  The settings or configurations which reflect on LogicMonitor portal.
 
@@ -207,10 +78,6 @@ If any Namespace scoped resources are set, then the namespance resources will ge
  Extra properties to add upon resource groups, only cluster scoped resources are valid, for others resources use namespace labels
 
 
-## The etcd schema
- Properties to apply upon ETCD resource group.
-
-
 ## The cluster schema
  Properties to apply upon cluster tree root resource group.
 
@@ -219,209 +86,10 @@ If any Namespace scoped resources are set, then the namespance resources will ge
  
 
 
-## The serviceAccount schema
- Describes the purpose of this instance.
+## The etcd schema
+ Properties to apply upon ETCD resource group.
 
-| Path | Title | Description |
 
-| :---- | :---- | :---- |
-
-| .argus.serviceAccount.create | The create schema | Describes the purpose of this instance. |<br>
-## %!s(<nil>)
- The container probe configuration schema
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.probe.enabled | %!s(<nil>) | Enables container probes. |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.probe.startup.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the Argus startup. |<br>| .argus.probe.startup.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.probe.liveness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the Argus startup |<br>| .argus.probe.liveness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.probe.readiness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the Argus startup |<br>| .argus.probe.readiness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
-## The Argus resource limits schema
- The Argus pod resource limits
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.resources.limits | %!s(<nil>) | Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/ |<br>| .argus.resources.requests | %!s(<nil>) | Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/ |<br>
-## The collectorsetcontroller schema
- The Collectorset-Controller Configurations
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.collectorsetcontroller.address | The CollectorsetController Address Schema | The Collectorset-controller grpc service address |<br>| .argus.collectorsetcontroller.port | port | The Collectorset-controller grpc service port |<br>
-## The filters schema
- Set of filter rules to exclude from adding into LogicMonitor.
-
-
-## The debug schema
- The Application debugging configurations.
-
-
-## The profiling schema
- Profile generation configurations.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.debug.profiling.enable | The enable schema | Once the property is set to true, it starts application profile generations. |<br>
-## Argus Docker Image Schema
- The image contains the Argus docker image details.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.image.repository | Argus Image Repository Schema | The Docker Repository Name for Argus Image |<br>| .argus.image.pullPolicy | The Argus pullPolicy Schema | Overrides the image pullPolicy.
-Defaults to "Always". |<br>| .argus.image.tag | The Argus Image tag schema | The Argus Docker Image Tag.
-Overrides the image tag whose default is the chart appVersion. |<br>| .argus.image.registry | Argus Image Registry Schema | The Docker Registry from which Argus image is pulled.
-defaults to empty value. |<br>
-## The rbac schema
- Describes the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.rbac.create | The create schema | Describes the purpose of this instance. |<br>
-## The collector schema
- Describes the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.collector.useEA | The useEA schema | Describes the purpose of this instance. |<br>| .argus.collector.size | The size schema | Describes the purpose of this instance. |<br>| .argus.collector.version | The version schema | Describes the purpose of this instance. |<br>| .argus.collector.annotations | The annotations schema | Describes the purpose of this instance. |<br>| .argus.collector.labels | The labels schema | Describes the purpose of this instance. |<br>| .argus.collector.replicas | The replicas schema | Describes the purpose of this instance. |<br>
-## %!s(<nil>)
- The container probe configuration schema.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.collector.probe.enabled | %!s(<nil>) | Enables container probes. |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.collector.probe.startup.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the Argus startup. |<br>| .argus.collector.probe.startup.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.collector.probe.liveness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the argus startup |<br>| .argus.collector.probe.liveness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.collector.probe.readiness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the Argus startup |<br>| .argus.collector.probe.readiness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
-## The image schema
- Describes the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.collector.image.pullPolicy | The pullPolicy schema | Describes the purpose of this instance. |<br>| .argus.collector.image.registry | The registry schema | Container Image Registry |<br>| .argus.collector.image.repository | The repository schema | Describes the purpose of this instance. |<br>| .argus.collector.image.tag | The tag schema | Describes the purpose of this instance. |<br>
-## %!s(<nil>)
- The collector StatefulSet specification for customizations
-
-
-## %!s(<nil>)
- %!s(<nil>)
-
-
-## %!s(<nil>)
- %!s(<nil>)
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.collector.statefulsetSpec.template.spec.nodeName | %!s(<nil>) | NodeName is a request to schedule this pod onto a specific node. If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements. |<br>| .argus.collector.statefulsetSpec.template.spec.nodeSelector | %!s(<nil>) | NodeSelector is a selector, which you must set to true for the pod to fit on a node. The selector must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/ |<br>| .argus.collector.statefulsetSpec.template.spec.priorityClassName | %!s(<nil>) | If specified, indicates the pod's priority. "system-node-critical" and "system-cluster-critical" are two special keywords that indicate the highest priorities with the former being the highest priority. Any other name must be defined while creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default. |<br>| .argus.collector.statefulsetSpec.template.spec.restartPolicy | %!s(<nil>) | Restart policy for all containers within the pod. One of Always, OnFailure, Never. Set the default value to Always. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy |<br>| .argus.collector.statefulsetSpec.template.spec.schedulerName | %!s(<nil>) | If specified, the pod will be dispatched by specified scheduler. If not specified, the pod will be dispatched by default scheduler. |<br>| .argus.collector.statefulsetSpec.template.spec.dnsPolicy | %!s(<nil>) | Set DNS policy for the pod. Defaults to "ClusterFirst". Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. |<br>| .argus.collector.statefulsetSpec.template.spec.priority | %!s(<nil>) | The priority value. Various system components use the property value field to find the priority of the pod. When Priority Admission Controller is enabled, it prevents users from setting this field. The Admission Controller populates this field from PriorityClassName. The higher the value, the higher the priority. |<br>
-## %!s(<nil>)
- %!s(<nil>)
-
-
-## %!s(<nil>)
- PodDNSConfig defines the DNS parameters of a pod in addition to those generated from DNSPolicy.
-
-
-## %!s(<nil>)
- A list of DNS search domains for host-name lookup. This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
-
-
-## %!s(<nil>)
- A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
-
-
-## %!s(<nil>)
- A list of DNS resolver options. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy.
-
-
-## %!s(<nil>)
- HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts file if specified. This is only valid for non-hostNetwork pods.
-
-
-## %!s(<nil>)
- %!s(<nil>)
-
-
-## %!s(<nil>)
- List of volumes that can be mounted by containers belonging to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes
-
-
-## The lm schema
- Describes the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.collector.lm.groupID | The groupID schema | Describes the purpose of this instance. |<br>| .argus.collector.lm.escalationChainID | The escalationChainID schema | Describes the purpose of this instance. |<br>
-## The proxy schema
- Describes the purpose of this instance.
-
-| Path | Title | Description |
-
-| :---- | :---- | :---- |
-
-| .argus.collector.proxy.url | The url schema | Describes the purpose of this instance. |<br>| .argus.collector.proxy.user | The user schema | Describes the purpose of this instance. |<br>| .argus.collector.proxy.pass | The pass schema | Describes the purpose of this instance. |<br>
 ## The Argus Daemon configurations Schema
  The Argus Daemon configurations.
 
@@ -466,14 +134,6 @@ defaults to empty value. |<br>
 | :---- | :---- | :---- |
 
 | .argus.daemons.watcher.runner.poolSize | The Runner poolSize schema | The number runners in a pool. |<br>| .argus.daemons.watcher.runner.backPressureQueueSizePerRunner | The Number of events to queue per runner schema | The number of events to queue per runner. |<br>
-## The monitoring schema
- The Monitoring settings
-
-
-## The disable schema
- Set of resource names to disable monitoring for.
-
-
 ## %!s(<nil>)
  %!s(<nil>)
 
@@ -481,11 +141,11 @@ defaults to empty value. |<br>
 
 | :---- | :---- | :---- |
 
-| .argus.global.accessID | Logicmonitor API Token accessID | The LogicMonitor API key ID.
+| .argus.global.collectorsetServiceNameSuffix | %!s(<nil>) | Suffix to be added to .Release.name to generate Collectorset controller service URL.
+Keep it empty while installing this chart individually, umbrella chart uses this to generate unique name across. |<br>| .argus.global.accessID | Logicmonitor API Token accessID | The LogicMonitor API key ID.
 NOTE: Ensure to add surrounding double quotes to avoid special character parsing errors. |<br>| .argus.global.accessKey | Logicmonitor API Token accessKey | The LogicMonitor API key.
 NOTE: Ensure to add surrounding double quotes to avoid special character parsing errors. |<br>| .argus.global.account | Logicmonitor account name | The LogicMonitor account name.nValue should be trimmed from URL "___.logicmonitor.com"
-example: lmqauat.logicmonitor.com then "lmqauat" must be a valid value. |<br>| .argus.global.collectorsetServiceNameSuffix | %!s(<nil>) | Suffix to be added to .Release.name to generate Collectorset controller service URL.
-Keep it empty while installing this chart individually, umbrella chart uses this to generate unique name across. |<br>
+example: lmqauat.logicmonitor.com then "lmqauat" must be a valid value. |<br>
 ## %!s(<nil>)
  ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
 
@@ -505,11 +165,142 @@ Keep it empty while installing this chart individually, umbrella chart uses this
 
 | :---- | :---- | :---- |
 
-| .argus.global.proxy.url | url | Proxy service endpoint. |<br>| .argus.global.proxy.user | The user schema | User for Proxy service. |<br>| .argus.global.proxy.pass | pass | Password for the Proxy service. |<br>
-## tolerations
- tolerations are applied to pods, and allow the pods to schedule onto nodes with matching taints.
+| .argus.global.proxy.pass | pass | Password for the Proxy service. |<br>| .argus.global.proxy.url | url | Proxy service endpoint. |<br>| .argus.global.proxy.user | The user schema | User for Proxy service. |<br>
+## The Argus resource limits schema
+ The Argus pod resource limits
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.resources.limits | %!s(<nil>) | Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/ |<br>| .argus.resources.requests | %!s(<nil>) | Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/ |<br>
+## The collector schema
+ Describes the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.collector.annotations | The annotations schema | Describes the purpose of this instance. |<br>| .argus.collector.labels | The labels schema | Describes the purpose of this instance. |<br>| .argus.collector.replicas | The replicas schema | Describes the purpose of this instance. |<br>| .argus.collector.version | The version schema | Describes the purpose of this instance. |<br>| .argus.collector.size | The size schema | Describes the purpose of this instance. |<br>| .argus.collector.useEA | The useEA schema | Describes the purpose of this instance. |<br>
+## The lm schema
+ Describes the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.collector.lm.groupID | The groupID schema | Describes the purpose of this instance. |<br>| .argus.collector.lm.escalationChainID | The escalationChainID schema | Describes the purpose of this instance. |<br>
+## The proxy schema
+ Describes the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.collector.proxy.url | The url schema | Describes the purpose of this instance. |<br>| .argus.collector.proxy.user | The user schema | Describes the purpose of this instance. |<br>| .argus.collector.proxy.pass | The pass schema | Describes the purpose of this instance. |<br>
+## %!s(<nil>)
+ The collector StatefulSet specification for customizations
 
 
+## %!s(<nil>)
+ %!s(<nil>)
+
+
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.collector.statefulsetSpec.template.spec.nodeSelector | %!s(<nil>) | NodeSelector is a selector, which you must set to true for the pod to fit on a node. The selector must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/ |<br>| .argus.collector.statefulsetSpec.template.spec.dnsPolicy | %!s(<nil>) | Set DNS policy for the pod. Defaults to "ClusterFirst". Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. |<br>| .argus.collector.statefulsetSpec.template.spec.nodeName | %!s(<nil>) | NodeName is a request to schedule this pod onto a specific node. If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements. |<br>| .argus.collector.statefulsetSpec.template.spec.priority | %!s(<nil>) | The priority value. Various system components use the property value field to find the priority of the pod. When Priority Admission Controller is enabled, it prevents users from setting this field. The Admission Controller populates this field from PriorityClassName. The higher the value, the higher the priority. |<br>| .argus.collector.statefulsetSpec.template.spec.priorityClassName | %!s(<nil>) | If specified, indicates the pod's priority. "system-node-critical" and "system-cluster-critical" are two special keywords that indicate the highest priorities with the former being the highest priority. Any other name must be defined while creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default. |<br>| .argus.collector.statefulsetSpec.template.spec.restartPolicy | %!s(<nil>) | Restart policy for all containers within the pod. One of Always, OnFailure, Never. Set the default value to Always. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy |<br>| .argus.collector.statefulsetSpec.template.spec.schedulerName | %!s(<nil>) | If specified, the pod will be dispatched by specified scheduler. If not specified, the pod will be dispatched by default scheduler. |<br>
+## %!s(<nil>)
+ HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts file if specified. This is only valid for non-hostNetwork pods.
+
+
+## %!s(<nil>)
+ %!s(<nil>)
+
+
+## %!s(<nil>)
+ List of volumes that can be mounted by containers belonging to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes
+
+
+## %!s(<nil>)
+ %!s(<nil>)
+
+
+## %!s(<nil>)
+ PodDNSConfig defines the DNS parameters of a pod in addition to those generated from DNSPolicy.
+
+
+## %!s(<nil>)
+ A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
+
+
+## %!s(<nil>)
+ A list of DNS resolver options. This will be merged with the base options generated from DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will override those that appear in the base DNSPolicy.
+
+
+## %!s(<nil>)
+ A list of DNS search domains for host-name lookup. This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
+
+
+## %!s(<nil>)
+ The container probe configuration schema.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.collector.probe.enabled | %!s(<nil>) | Enables container probes. |<br>
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.collector.probe.liveness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the argus startup |<br>| .argus.collector.probe.liveness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.collector.probe.readiness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the Argus startup |<br>| .argus.collector.probe.readiness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.collector.probe.startup.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the Argus startup. |<br>| .argus.collector.probe.startup.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
+## The image schema
+ Describes the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.collector.image.registry | The registry schema | Container Image Registry |<br>| .argus.collector.image.repository | The repository schema | Describes the purpose of this instance. |<br>| .argus.collector.image.tag | The tag schema | Describes the purpose of this instance. |<br>| .argus.collector.image.pullPolicy | The pullPolicy schema | Describes the purpose of this instance. |<br>
+## %!s(<nil>)
+ ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
+
+
+## Argus Docker Image Schema
+ The image contains the Argus docker image details.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.image.repository | Argus Image Repository Schema | The Docker Repository Name for Argus Image |<br>| .argus.image.pullPolicy | The Argus pullPolicy Schema | Overrides the image pullPolicy.
+Defaults to "Always". |<br>| .argus.image.tag | The Argus Image tag schema | The Argus Docker Image Tag.
+Overrides the image tag whose default is the chart appVersion. |<br>| .argus.image.registry | Argus Image Registry Schema | The Docker Registry from which Argus image is pulled.
+defaults to empty value. |<br>
 ## Log
  The Argus Log Configurations Schema
 
@@ -517,4 +308,213 @@ Keep it empty while installing this chart individually, umbrella chart uses this
 
 | :---- | :---- | :---- |
 
-| .argus.log.level | The Log Level for Argus Schema | The Log Level for Argus |<br>{}
+| .argus.log.level | The Log Level for Argus Schema | The Log Level for Argus |<br>
+## The debug schema
+ The Application debugging configurations.
+
+
+## The profiling schema
+ Profile generation configurations.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.debug.profiling.enable | The enable schema | Once the property is set to true, it starts application profile generations. |<br>
+## The proxy schema
+ The Http/s proxy for Argus
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.proxy.pass | The Proxy Server's Password schema | Password for the Proxy Server |<br>| .argus.proxy.url | The Proxy Server URL Schema | The Proxy Server's URL |<br>| .argus.proxy.user | The Proxy Server's User schema | User for the Proxy Server. |<br>
+## The serviceAccount schema
+ Describes the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.serviceAccount.create | The create schema | Describes the purpose of this instance. |<br>
+## The filters schema
+ Set of filter rules to exclude from adding into LogicMonitor.
+
+
+## tolerations
+ tolerations are applied to pods, and allow the pods to schedule onto nodes with matching taints.
+
+
+## The selfMonitor schema
+ Configurations to expose self monitor metrics in Openmetrics format.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.selfMonitor.enable | The enable schema | Once the property is enabled, self monitor metrics are displayed.  |<br>| .argus.selfMonitor.port | The port schema | port number to expose self monitor "/metrics" endpoint |<br>
+## The rbac schema
+ Describes the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.rbac.create | The create schema | Describes the purpose of this instance. |<br>
+## %!s(<nil>)
+ The container probe configuration schema
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.probe.enabled | %!s(<nil>) | Enables container probes. |<br>
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.probe.liveness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the Argus startup |<br>| .argus.probe.liveness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.probe.readiness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the Argus startup |<br>| .argus.probe.readiness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .argus.probe.startup.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the Argus startup. |<br>| .argus.probe.startup.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
+## The monitoring schema
+ The Monitoring settings
+
+
+## The disable schema
+ Set of resource names to disable monitoring for.
+
+
+## Collectorset Controller Helm chart Values Schema
+ Collectorset Controller Helm chart Values Schema
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.nameOverride | The nameOverride schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.annotations | The annotations schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.accessKey | The accessKey schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.fullnameOverride | The fullnameOverride schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.ignoreSSL | The ignoreSSL schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.accessID | The accessID schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.account | The account schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.nodeSelector | The nodeSelector schema | NodeSelector is a selector which must be true for the pod to fit on a node. Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/ |<br>| .collectorset-controller.affinity | The affinity schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.labels | The labels schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.enabled | %!s(<nil>) | Defined for umbrella chart but unused here. |<br>| .collectorset-controller.priorityClassName | The priorityClassName schema | An explanation about the purpose of this instance. |<br>
+## %!s(<nil>)
+ ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
+
+
+## The image schema
+ An explanation about the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.image.pullPolicy | The pullPolicy schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.image.tag | The tag schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.image.registry | The registry schema | Container Image Registry |<br>| .collectorset-controller.image.repository | The repository schema | An explanation about the purpose of this instance. |<br>
+## The tolerations schema
+ An explanation about the purpose of this instance.
+
+
+## %!s(<nil>)
+ The container probe configuration schema
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.probe.enabled | %!s(<nil>) | Enables container probes |<br>
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.probe.startup.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the argus startup |<br>| .collectorset-controller.probe.startup.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.probe.liveness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the argus startup |<br>| .collectorset-controller.probe.liveness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.probe.readiness.failureThreshold | %!s(<nil>) | The failureThreshold is maximum count before marking container start failed, typically collector installation time affects the argus startup |<br>| .collectorset-controller.probe.readiness.periodSeconds | %!s(<nil>) | How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. |<br>
+## The serviceAccount schema
+ An explanation about the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.serviceAccount.create | The create schema | An explanation about the purpose of this instance. |<br>
+## The rbac schema
+ An explanation about the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.rbac.create | The create schema | An explanation about the purpose of this instance. |<br>
+## The proxy schema
+ An explanation about the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.proxy.url | The url schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.proxy.user | The user schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.proxy.pass | The pass schema | An explanation about the purpose of this instance. |<br>
+## %!s(<nil>)
+ %!s(<nil>)
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.global.collectorsetServiceNameSuffix | %!s(<nil>) | Suffix to be added to .Release.name to generate Collectorset controller service name.
+Keep it empty while installing this chart individually, umbrella chart uses this to generate unique name across |<br>
+## %!s(<nil>)
+ ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec. If specified, these secrets will be passed to individual puller implementations for them to use. For example, in the case of docker, only DockerConfig type secrets are honored. More info: https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
+
+
+## The image schema
+ An explanation about the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.global.image.registry | The registry schema | Container Image Registry |<br>| .collectorset-controller.global.image.pullPolicy | pullPolicy | Overrides the image tag whose default is the chart appVersion. |<br>
+## The proxy schema
+ An explanation about the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.global.proxy.pass | The pass schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.global.proxy.url | The url schema | An explanation about the purpose of this instance. |<br>| .collectorset-controller.global.proxy.user | The user schema | An explanation about the purpose of this instance. |<br>
+## The log schema
+ An explanation about the purpose of this instance.
+
+| Path | Title | Description |
+
+| :---- | :---- | :---- |
+
+| .collectorset-controller.log.level | The level schema | An explanation about the purpose of this instance. |<br>{}
