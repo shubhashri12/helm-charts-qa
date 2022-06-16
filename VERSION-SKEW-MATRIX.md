@@ -31,6 +31,7 @@
 ## LM Container Releases
 | name | version | appVersion | dependencies | Compatible Kubernetes Versions |
 | :---- | :---- | :---- | :---- | :---- |
+| lm-container | [1.0.0-rc95](https://github.com/logicmonitor/helm-charts-qa/releases/tag/lm-container-1.0.0-rc95) |  | <ul> <li>argus@2.0.0-rc94 https://logicmonitor.github.io/helm-charts-qa</li><li>collectorset-controller@1.0.0-rc81 https://logicmonitor.github.io/helm-charts-qa</li> </ul> |  | 
 | lm-container | [1.0.0-rc94](https://github.com/logicmonitor/helm-charts-qa/releases/tag/lm-container-1.0.0-rc94) |  | <ul> <li>argus@2.0.0-rc9 https://logicmonitor.github.io/helm-charts-qa</li><li>collectorset-controller@1.0.0-rc7 https://logicmonitor.github.io/helm-charts-qa</li> </ul> |  | 
 | lm-container | [1.0.0-rc93](https://github.com/logicmonitor/helm-charts-qa/releases/tag/lm-container-1.0.0-rc93) |  | <ul> <li>argus@2.0.0-rc9 https://logicmonitor.github.io/helm-charts-qa</li><li>collectorset-controller@1.0.0-rc7 https://logicmonitor.github.io/helm-charts-qa</li> </ul> |  | 
 | lm-container | [1.0.0-rc92](https://github.com/logicmonitor/helm-charts-qa/releases/tag/lm-container-1.0.0-rc92) |  | <ul> <li>argus@2.0.0-rc9 https://logicmonitor.github.io/helm-charts-qa</li><li>collectorset-controller@1.0.0-rc7 https://logicmonitor.github.io/helm-charts-qa</li> </ul> |  | 
