@@ -7,9 +7,7 @@
  The Argus Helm Chart Configuration Schema
 
 | Path | Title | Description |
-
 | :---- | :---- | :---- |
-
 | .argus.ignoreSSL | The ignoreSSL Schema | Set flag to ignore ssl/tls validation. |<br>| .argus.annotations | The Argus extra annotations schema | Annotations to apply on all objects created by Argus. Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations |<br>| .argus.replicas | The replicas schema | Argus Pod Replicas - defaults to 1, parameter is just for development purpose, do not increase more than one replicas in production |<br>| .argus.fullnameOverride | The fullnameOverride schema | Describes the purpose of this instance. |<br>| .argus.account | Logicmonitor account name | The LogicMonitor account name.nValue should be trimmed from URL "___.logicmonitor.com"
 example: lmqauat.logicmonitor.com then "lmqauat" must be a valid value. |<br>| .argus.labels | The Argus extra labels schema | Labels to apply on all objects created by Argus. Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels |<br>| .argus.resourceContainerID | The resourceContainerID schema | You must use the resourceContainerID when you install Argus as a non-admin user. 
 The resourceContainerID is a parent resource group id that holds all cluster resources under it. |<br>| .argus.accessID | Logicmonitor API Token accessID | The LogicMonitor API key ID.
