@@ -3,6 +3,26 @@ entries:
   argus:
   - apiVersion: v2
     appVersion: v8.0.0-rc6
+    created: "2022-06-23T11:27:18.768635695Z"
+    dependencies:
+    - condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.7.0
+    description: Automated Kubernetes monitoring
+    digest: f2779d76d44963662a8461d1b75131e613034a5b55e1922cf6061efdb02a5fba
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: argus
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-2.0.0-rc99/argus-2.0.0-rc99.tgz
+    version: 2.0.0-rc99
+  - apiVersion: v2
+    appVersion: v8.0.0-rc6
     created: "2022-06-23T11:18:05.560159079Z"
     dependencies:
     - condition: kube-state-metrics.enabled
@@ -1033,4 +1053,4 @@ entries:
     urls:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/lm-container-1.0.0-rc1/lm-container-1.0.0-rc1.tgz
     version: 1.0.0-rc1
-generated: "2022-06-23T11:18:05.560528386Z"
+generated: "2022-06-23T11:27:18.768960097Z"
