@@ -2,6 +2,7 @@
 ## Argus Releases
 | name | version | appVersion | dependencies | Compatible Kubernetes Versions |
 | :---- | :---- | :---- | :---- | :---- |
+| argus | [2.0.0-rc994](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.0.0-rc994) | [v8.0.0-rc9](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.0.0-rc9) | <ul> <li>kube-state-metrics@4.7.0 https://prometheus-community.github.io/helm-charts</li> </ul> | >= 1.16.0-0 | 
 | argus | [2.0.0-rc993](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.0.0-rc993) | [v8.0.0-rc8](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.0.0-rc8) | <ul> <li>kube-state-metrics@4.7.0 https://prometheus-community.github.io/helm-charts</li> </ul> | >= 1.16.0-0 | 
 | argus | [2.0.0-rc992](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.0.0-rc992) | [v8.0.0-rc8](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.0.0-rc8) | <ul> <li>kube-state-metrics@4.7.0 https://prometheus-community.github.io/helm-charts</li> </ul> | >= 1.16.0-0 | 
 | argus | [2.0.0-rc991](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.0.0-rc991) | [v8.0.0-rc7](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.0.0-rc7) | <ul> <li>kube-state-metrics@4.7.0 https://prometheus-community.github.io/helm-charts</li> </ul> | >= 1.16.0-0 | 
@@ -27,6 +28,7 @@
 ## Collectorset Controller Releases
 | name | version | appVersion | dependencies | Compatible Kubernetes Versions |
 | :---- | :---- | :---- | :---- | :---- |
+| collectorset-controller | [1.0.0-rc87](https://github.com/logicmonitor/helm-charts-qa/releases/tag/collectorset-controller-1.0.0-rc87) | [v4.0.0-rc3](https://hub.docker.com/r/logicmonitor/collectorset-controller/tags?page=1&name=v4.0.0-rc3) | <ul>  </ul> | >= 1.16.0-0 | 
 | collectorset-controller | [1.0.0-rc86](https://github.com/logicmonitor/helm-charts-qa/releases/tag/collectorset-controller-1.0.0-rc86) | [v4.0.0-rc3](https://hub.docker.com/r/logicmonitor/collectorset-controller/tags?page=1&name=v4.0.0-rc3) | <ul>  </ul> | >= 1.16.0-0 | 
 | collectorset-controller | [1.0.0-rc85](https://github.com/logicmonitor/helm-charts-qa/releases/tag/collectorset-controller-1.0.0-rc85) | [v4.0.0-rc3](https://hub.docker.com/r/logicmonitor/collectorset-controller/tags?page=1&name=v4.0.0-rc3) | <ul>  </ul> | >= 1.16.0-0 | 
 | collectorset-controller | [1.0.0-rc84](https://github.com/logicmonitor/helm-charts-qa/releases/tag/collectorset-controller-1.0.0-rc84) | [v4.0.0-rc3](https://hub.docker.com/r/logicmonitor/collectorset-controller/tags?page=1&name=v4.0.0-rc3) | <ul>  </ul> | >= 1.16.0-0 | 
