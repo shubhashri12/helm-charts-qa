@@ -3,6 +3,26 @@ entries:
   argus:
   - apiVersion: v2
     appVersion: v8.0.0-rc9
+    created: "2022-07-11T09:58:57.969194268Z"
+    dependencies:
+    - condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.7.0
+    description: Automated Kubernetes monitoring
+    digest: a5b6d575031b27a2c4833fd7024fc72e5a9acdb16abf2ba1ea91e6c807b6bf9c
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: argus
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-2.0.0-rt01/argus-2.0.0-rt01.tgz
+    version: 2.0.0-rt01
+  - apiVersion: v2
+    appVersion: v8.0.0-rc9
     created: "2022-07-08T11:52:15.959503249Z"
     dependencies:
     - condition: kube-state-metrics.enabled
@@ -442,6 +462,21 @@ entries:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-2.0.0-rc1/argus-2.0.0-rc1.tgz
     version: 2.0.0-rc1
   collectorset-controller:
+  - apiVersion: v2
+    appVersion: v4.0.0-rc4
+    created: "2022-07-11T09:58:58.208798216Z"
+    description: Automated collector management
+    digest: 050e57d38d5349aeda73e5f6a0831ac4fb3b87592c5904208832badcd58a9909
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: collectorset-controller
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/collectorset-controller-1.0.0-rt01/collectorset-controller-1.0.0-rt01.tgz
+    version: 1.0.0-rt01
   - apiVersion: v2
     appVersion: v4.0.0-rc3
     created: "2022-07-08T11:52:16.194544115Z"
@@ -1466,4 +1501,4 @@ entries:
     urls:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/lm-container-1.0.0-rc1/lm-container-1.0.0-rc1.tgz
     version: 1.0.0-rc1
-generated: "2022-07-08T12:19:19.23774652Z"
+generated: "2022-07-11T09:58:58.209445831Z"
