@@ -13,4 +13,4 @@ maintainers:
 name: argus
 version: 2.0.0-rt02
 home: https://logicmonitor.github.io/helm-charts-qa
-appVersion: v8.0.0-rc10
+appVersion: v8.1.0-rc1
