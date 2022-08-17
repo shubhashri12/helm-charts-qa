@@ -1221,6 +1221,7 @@
           },
           "annotations": {},
           "labels": {},
+          "agent_conf":{},
           "statefulsetSpec": {
             "template": {
               "spec": {
@@ -1454,6 +1455,17 @@
           "additionalProperties": {
             "type": "string"
           }
+        },
+        "agent_conf": {
+          "$id": "#/properties/collector/properties/agent_conf",
+          "type": "object",
+          "title": "The collector agent configurations schema",
+          "description": "Describes the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {}
+          ],
+          "required": []
         },
         "labels": {
           "$id": "#/properties/collector/properties/labels",

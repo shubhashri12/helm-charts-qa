@@ -121,6 +121,11 @@ debug:
 collector:
   ## REQUIRED VALUES
 
+  agent_conf: 
+    groovy_runner: "agent"
+    enable_trimmed_collector: false
+    list_disable_collector_processes: "jdbc,perfmon,wmi,netapp,esx,xen,mongo,wineventlog,snmptrap, syslog"
+
   # The number of collectors to create and use with Argus.
   replicas: 1
   version: 0

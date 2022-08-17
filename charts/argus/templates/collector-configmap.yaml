@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: collector-configmap
+data:
+  agentconf.yaml: |
+      {{- toYaml .Values.collector.agent_conf | nindent 4 }}
