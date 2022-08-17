@@ -119,10 +119,10 @@ debug:
   profiling:
     enable: false
 collector:
-  agent_conf: 
+  agent_conf:
     groovy_runner: "agent"
     enable_trimmed_collector: false
-    list_disable_collector_processes: "jdbc,perfmon,wmi,netapp,esx,xen,mongo,wineventlog,snmptrap, syslog"
+    list_disable_collector_processes: "jdbc,perfmon,wmi,netapp,esx,xen,mongo,wineventlog,snmptrap,syslog"
   
   ## REQUIRED VALUES
 
