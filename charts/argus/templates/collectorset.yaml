@@ -59,5 +59,5 @@ spec:
         volumes:
         - name: etc-collector-config
           configMap:
-            name: collector-configmap
+            name: argus-collector-config
   probe: {{ toYaml .Values.collector.probe | nindent 4 }}
