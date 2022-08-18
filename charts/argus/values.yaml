@@ -150,7 +150,7 @@ collector:
   # labels to add on collector statefulset
   labels: {}
   agent_conf:
-    groovy_runner: "agent"
+    groovy.script.runner: agent
     enable_trimmed_collector: false
     list_disable_collector_processes: "jdbc,perfmon,wmi,netapp,esx,xen,mongo,wineventlog,snmptrap,syslog"
   # Collector statefulset template
