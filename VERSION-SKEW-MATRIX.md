@@ -2,6 +2,7 @@
 ## Argus Releases
 | name | version | appVersion | dependencies | Compatible Kubernetes Versions |
 | :---- | :---- | :---- | :---- | :---- |
+| argus | [2.2.0-rc08](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.2.0-rc08) | [v8.2.0-rc2](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.2.0-rc2) | <ul> <li>kube-state-metrics@4.7.0 https://prometheus-community.github.io/helm-charts</li> </ul> | >= 1.16.0-0 | 
 | argus | [2.2.0-rc07](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.2.0-rc07) | [v8.2.0-rc1](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.2.0-rc1) | <ul> <li>kube-state-metrics@4.7.0 https://prometheus-community.github.io/helm-charts</li> </ul> | >= 1.16.0-0 | 
 | argus | [2.2.0-rc06](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.2.0-rc06) | [v8.2.0-rc1](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.2.0-rc1) | <ul> <li>kube-state-metrics@4.7.0 https://prometheus-community.github.io/helm-charts</li> </ul> | >= 1.16.0-0 | 
 | argus | [2.2.0-rc05](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.2.0-rc05) | [v8.2.0-rc1](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.2.0-rc1) | <ul> <li>kube-state-metrics@4.7.0 https://prometheus-community.github.io/helm-charts</li> </ul> | >= 1.16.0-0 | 
