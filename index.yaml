@@ -3,6 +3,21 @@ entries:
   argus:
   - apiVersion: v2
     appVersion: v8.2.0-rc2
+    created: "2022-09-27T07:58:05.331842384Z"
+    description: Automated Kubernetes monitoring
+    digest: 4ce3ea6f8857df56a2cf15427f759d4eee628d31230c3da64241317eab2280cb
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: argus
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-2.2.0-rc10/argus-2.2.0-rc10.tgz
+    version: 2.2.0-rc10
+  - apiVersion: v2
+    appVersion: v8.2.0-rc2
     created: "2022-09-23T11:01:36.109520953Z"
     description: Automated Kubernetes monitoring
     digest: 9ddcea49d66fc49a66c42af1f852bd324f0e8999134b0c8928e1e1d20f25e048
@@ -257,6 +272,21 @@ entries:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-2.0.0-rc994/argus-2.0.0-rc994.tgz
     version: 2.0.0-rc994
   collectorset-controller:
+  - apiVersion: v2
+    appVersion: v4.1.0-rc4
+    created: "2022-09-27T07:58:05.422551238Z"
+    description: Automated collector management
+    digest: 63d0999dc276069c6c735d8453433e21ff9ee4a4e3dddb7ee2c869f8df598d8e
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: collectorset-controller
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/collectorset-controller-1.1.0-rc08/collectorset-controller-1.1.0-rc08.tgz
+    version: 1.1.0-rc08
   - apiVersion: v2
     appVersion: v4.1.0-rc4
     created: "2022-09-22T09:35:14.077281929Z"
@@ -847,4 +877,4 @@ entries:
     urls:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/lm-container-1.0.0-rc998/lm-container-1.0.0-rc998.tgz
     version: 1.0.0-rc998
-generated: "2022-09-23T11:17:46.728560509Z"
+generated: "2022-09-27T07:58:05.422821843Z"
