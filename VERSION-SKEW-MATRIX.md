@@ -2,6 +2,7 @@
 ## Argus Releases
 | name | version | appVersion | dependencies | Compatible Kubernetes Versions |
 | :---- | :---- | :---- | :---- | :---- |
+| argus | [2.2.0-rt02](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.2.0-rt02) | [v8.2.0-rc2](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.2.0-rc2) | <ul>  </ul> | >= 1.16.0-0 | 
 | argus | [2.2.0-rt01](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.2.0-rt01) | [v8.2.0-rc2](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.2.0-rc2) | <ul>  </ul> | >= 1.16.0-0 | 
 | argus | [2.2.0-rc10](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.2.0-rc10) | [v8.2.0-rc2](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.2.0-rc2) | <ul>  </ul> | >= 1.16.0-0 | 
 | argus | [2.2.0-rc09](https://github.com/logicmonitor/helm-charts-qa/releases/tag/argus-2.2.0-rc09) | [v8.2.0-rc2](https://hub.docker.com/r/logicmonitor/argus/tags?page=1&name=v8.2.0-rc2) | <ul>  </ul> | >= 1.16.0-0 | 
