@@ -93,6 +93,8 @@ jobs:
       - name: Push Terraform Scripts
         if: ${{ steps.get_chart.outputs.chartname == 'lm-container' }}
         uses: stefanzweifel/git-auto-commit-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.CHART_RELEASE_TOKEN }}
         with:
           branch: main
           repository: terraform-lm-lmc
