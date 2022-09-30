@@ -3,6 +3,21 @@ entries:
   argus:
   - apiVersion: v2
     appVersion: v8.2.0-rc2
+    created: "2022-09-30T10:32:23.802819869Z"
+    description: Automated Kubernetes monitoring
+    digest: 6e17e80f1d498b04ed054b47b17644ca5302754c61fdd2e17cd75dc5278e9b86
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: argus
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-2.2.0-rt02/argus-2.2.0-rt02.tgz
+    version: 2.2.0-rt02
+  - apiVersion: v2
+    appVersion: v8.2.0-rc2
     created: "2022-09-30T06:14:06.660718448Z"
     description: Automated Kubernetes monitoring
     digest: 07c4927fa0ec0052853e07c946fa76bce61380ea457c7a394f6a69f463f6973a
@@ -1152,4 +1167,4 @@ entries:
     urls:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/lm-container-1.0.0-rc998/lm-container-1.0.0-rc998.tgz
     version: 1.0.0-rc998
-generated: "2022-09-30T10:14:13.852286375Z"
+generated: "2022-09-30T10:32:23.803651574Z"
