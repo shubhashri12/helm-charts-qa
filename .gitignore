@@ -5,3 +5,4 @@ charts/**/Chart.lock
 .github/
 .idea
 package-lock.json
+scripts/**/lm-container
