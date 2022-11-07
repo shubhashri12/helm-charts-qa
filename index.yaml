@@ -2,6 +2,21 @@ apiVersion: v1
 entries:
   argus:
   - apiVersion: v2
+    appVersion: v10.0.0-rc1
+    created: "2022-11-07T09:50:18.253027188Z"
+    description: Automated Kubernetes monitoring
+    digest: 54ddf6e3840c11b15c12090ed1bccae6e75501f15a4433a1538df744b980a593
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: argus
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-5.0.0-rc01/argus-5.0.0-rc01.tgz
+    version: 5.0.0-rc01
+  - apiVersion: v2
     appVersion: v9.0.0-rc1
     created: "2022-11-04T08:19:41.456435142Z"
     description: Automated Kubernetes monitoring
@@ -482,6 +497,21 @@ entries:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-2.0.0-rc994/argus-2.0.0-rc994.tgz
     version: 2.0.0-rc994
   collectorset-controller:
+  - apiVersion: v2
+    appVersion: v6.0.0-rc1
+    created: "2022-11-07T09:50:18.388589339Z"
+    description: Automated collector management
+    digest: 3d56a2f4741809b3f3fefe70d88af2e990f229756db18c79b3f6d7c41887b632
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: collectorset-controller
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/collectorset-controller-4.0.0-rc01/collectorset-controller-4.0.0-rc01.tgz
+    version: 4.0.0-rc01
   - apiVersion: v2
     appVersion: v5.0.0-rc1
     created: "2022-11-04T08:19:41.566468487Z"
@@ -1902,4 +1932,4 @@ entries:
     urls:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/lm-container-1.0.0-rc998/lm-container-1.0.0-rc998.tgz
     version: 1.0.0-rc998
-generated: "2022-11-04T09:44:09.469505373Z"
+generated: "2022-11-07T09:50:18.389491259Z"
