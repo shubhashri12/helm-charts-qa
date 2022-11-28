@@ -108,6 +108,16 @@ rules:
       - watch
       - update
   - apiGroups:
+      - "rbac.authorization.k8s.io"
+    resources:
+      - clusterroles
+      - clusterrolebindings
+    verbs:
+      - list
+      - get
+      - watch
+      - update
+  - apiGroups:
       - "batch"
     resources:
       - cronjobs
