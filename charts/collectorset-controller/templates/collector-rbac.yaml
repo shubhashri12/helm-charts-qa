@@ -115,6 +115,13 @@ rules:
     verbs:
       - list
       - get
+  - apiGroups:
+      - "apiextensions.k8s.io"
+    resources:
+      - customresourcedefinitions
+    verbs:
+      - list
+      - get
   - nonResourceURLs:
       - /
       - /healthz
