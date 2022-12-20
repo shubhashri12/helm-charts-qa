@@ -2,6 +2,21 @@ apiVersion: v1
 entries:
   argus:
   - apiVersion: v2
+    appVersion: v10.1.0-rc02
+    created: "2022-12-20T09:25:36.604734593Z"
+    description: Automated Kubernetes monitoring
+    digest: 7cd823197e4cfe489e669404fe731d5f322b08e0de31db623971913a2a05a17b
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: argus
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-5.1.0-rc02/argus-5.1.0-rc02.tgz
+    version: 5.1.0-rc02
+  - apiVersion: v2
     appVersion: v10.1.0-rc1
     created: "2022-12-14T08:01:43.31748041Z"
     description: Automated Kubernetes monitoring
@@ -557,6 +572,21 @@ entries:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-2.0.0-rc994/argus-2.0.0-rc994.tgz
     version: 2.0.0-rc994
   collectorset-controller:
+  - apiVersion: v2
+    appVersion: v6.1.0-rc1
+    created: "2022-12-20T09:25:36.748340212Z"
+    description: Automated collector management
+    digest: 24adf440b820ec861508f5a4ac3ea3371d7c28197f73a38b50a840afffc5e2b7
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: collectorset-controller
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/collectorset-controller-4.1.0-rc03/collectorset-controller-4.1.0-rc03.tgz
+    version: 4.1.0-rc03
   - apiVersion: v2
     appVersion: v6.1.0-rc1
     created: "2022-12-14T08:01:43.460376262Z"
@@ -2644,4 +2674,4 @@ entries:
     urls:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/lm-logs-0.3.4-rc01/lm-logs-0.3.4-rc01.tgz
     version: 0.3.4-rc01
-generated: "2022-12-14T08:38:16.599820749Z"
+generated: "2022-12-20T09:25:36.749644135Z"
