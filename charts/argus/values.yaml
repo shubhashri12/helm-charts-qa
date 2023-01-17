@@ -91,6 +91,9 @@ daemons:
 monitoring:
   # list of resources to disable monitoring
   disable: []
+  # annotations to be ignored while performing an update operation
+  annotations:
+    ignore: []
 lm:
   lmlogs:
     k8sevent:
