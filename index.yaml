@@ -1199,6 +1199,54 @@ entries:
     version: 1.0.0-rc87
   lm-container:
   - apiVersion: v2
+    created: "2023-01-18T08:11:20.458789901Z"
+    dependencies:
+    - condition: argus.enabled
+      name: argus
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      tags:
+      - logicmonitor
+      - argus
+      - monitoring
+      version: 5.2.0-rc05
+    - condition: collectorset-controller.enabled
+      name: collectorset-controller
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      tags:
+      - logicmonitor
+      - collectorset-controller
+      - monitoring
+      version: 4.2.0-rc03
+    - condition: lm-logs.enabled
+      name: lm-logs
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      tags:
+      - logicmonitor
+      - lm-logs
+      - monitoring
+      - pod-logs-collection
+      - k8s-events-collection
+      version: 0.3.4-rc04
+    - condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.20.0
+    - name: lmutil
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      version: 0.1.4
+    description: A Helm chart for Logicmonitor's Kubernetes monitoring solutions
+    digest: 8b4dcc9af510180d5859bbc952cb0da9b3e3b754f482079a37ce4987c956b75a
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: lm-container
+    type: application
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/lm-container-3.2.0-rc05/lm-container-3.2.0-rc05.tgz
+    version: 3.2.0-rc05
+  - apiVersion: v2
     created: "2023-01-17T09:07:28.883482855Z"
     dependencies:
     - condition: argus.enabled
@@ -3206,4 +3254,4 @@ entries:
     urls:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/lmutil-0.1.0/lmutil-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-18T08:01:27.567925041Z"
+generated: "2023-01-18T08:11:20.459855806Z"
