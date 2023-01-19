@@ -3,6 +3,25 @@ entries:
   argus:
   - apiVersion: v2
     appVersion: v10.2.0-rc1
+    created: "2023-01-19T08:11:36.484996592Z"
+    dependencies:
+    - name: lmutil
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      version: 0.1.5
+    description: Automated Kubernetes monitoring
+    digest: 9003c9ac5be308c46c036b53d7ac9ffa83a63c7a9c606423555291c130d6ac9f
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: argus
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-5.2.0-rc06/argus-5.2.0-rc06.tgz
+    version: 5.2.0-rc06
+  - apiVersion: v2
+    appVersion: v10.2.0-rc1
     created: "2023-01-18T08:01:27.566523015Z"
     dependencies:
     - name: lmutil
@@ -686,6 +705,25 @@ entries:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/argus-2.0.0-rc994/argus-2.0.0-rc994.tgz
     version: 2.0.0-rc994
   collectorset-controller:
+  - apiVersion: v2
+    appVersion: v6.2.0-rc1
+    created: "2023-01-19T08:11:36.624944056Z"
+    dependencies:
+    - name: lmutil
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      version: 0.1.5
+    description: Automated collector management
+    digest: 786d1632758aa56356cd8e7e6413df3961d8edd951b6f5996fd541beae0888ce
+    home: https://logicmonitor.github.io/helm-charts-qa
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: collectorset-controller
+    urls:
+    - https://github.com/logicmonitor/helm-charts-qa/releases/download/collectorset-controller-4.2.0-rc04/collectorset-controller-4.2.0-rc04.tgz
+    version: 4.2.0-rc04
   - apiVersion: v2
     appVersion: v6.2.0-rc1
     created: "2023-01-17T07:44:42.649587862Z"
@@ -3268,4 +3306,4 @@ entries:
     urls:
     - https://github.com/logicmonitor/helm-charts-qa/releases/download/lmutil-0.1.0/lmutil-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-19T07:53:58.656978235Z"
+generated: "2023-01-19T08:11:36.626576499Z"
