@@ -567,6 +567,83 @@ spec:
           properties:
             spec:
               properties:
+                affinity:
+                  properties:
+                    podAntiAffinity:
+                      properties:
+                        requiredDuringSchedulingIgnoredDuringExecution:
+                          items:
+                            properties:
+                              labelSelector:
+                                properties:
+                                  matchLabels:
+                                    type: object
+                                  matchExpressions:
+                                    items:
+                                      type: object
+                                    type: array
+                                type: object
+                              namespaces:
+                                items:
+                                  type: string
+                                type: array
+                              topologyKey:
+                                type: string
+                              namespaceSelector:
+                                properties:
+                                  matchLabels:
+                                    type: object
+                                  matchExpressions:
+                                    type: array
+                                    items:
+                                      type: object
+                                type: object
+                            required:
+                              - topologyKey
+                            type: object
+                          type: array
+                        preferredDuringSchedulingIgnoredDuringExecution:
+                          items:
+                            properties:
+                              weight:
+                                type: integer
+                              podAffinityTerm:
+                                properties:
+                                  labelSelector:
+                                    properties:
+                                      matchLabels:
+                                        type: object
+                                      matchExpressions:
+                                        items:
+                                          type: object
+                                        type: array
+                                    type: object
+                                  namespaces:
+                                    items:
+                                      type: string
+                                    type: array
+                                  topologyKey:
+                                    type: string
+                                  namespaceSelector:
+                                    properties:
+                                      matchLabels:
+                                        type: object
+                                      matchExpressions:
+                                        items:
+                                          type: object
+                                        type: array
+                                    type: object
+                                required: 
+                                  - topologyKey
+                                type: object
+                            required:
+                              - podAffinityTerm
+                              - weight
+                            type: object
+                          type: array
+                      type: object
+                  description: The affinity rules of the collector pod
+                  type: object
                 annotations:
                   additionalProperties:
                     type: string
