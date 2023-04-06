@@ -577,9 +577,20 @@ spec:
                               labelSelector:
                                 properties:
                                   matchLabels:
+                                    additionalProperties:
+                                      type: string
                                     type: object
                                   matchExpressions:
                                     items:
+                                      properties:
+                                        operator:
+                                          type: string
+                                        values:
+                                          items:
+                                            type: string
+                                          type: array
+                                        key:
+                                          type: string
                                       type: object
                                     type: array
                                 type: object
@@ -592,11 +603,22 @@ spec:
                               namespaceSelector:
                                 properties:
                                   matchLabels:
+                                    additionalProperties:
+                                      type: string
                                     type: object
                                   matchExpressions:
-                                    type: array
                                     items:
+                                      properties:
+                                        operator:
+                                          type: string
+                                        values:
+                                          items:
+                                            type: string
+                                          type: array
+                                        key:
+                                          type: string
                                       type: object
+                                    type: array
                                 type: object
                             required:
                               - topologyKey
@@ -612,9 +634,20 @@ spec:
                                   labelSelector:
                                     properties:
                                       matchLabels:
+                                        additionalProperties:
+                                          type: string
                                         type: object
                                       matchExpressions:
                                         items:
+                                          properties:
+                                            operator:
+                                              type: string
+                                            values:
+                                              items:
+                                                type: string
+                                              type: array
+                                            key:
+                                              type: string
                                           type: object
                                         type: array
                                     type: object
@@ -627,9 +660,20 @@ spec:
                                   namespaceSelector:
                                     properties:
                                       matchLabels:
+                                        additionalProperties:
+                                          type: string
                                         type: object
                                       matchExpressions:
                                         items:
+                                          properties:
+                                            operator:
+                                              type: string
+                                            values:
+                                              items:
+                                                type: string
+                                              type: array
+                                            key:
+                                              type: string
                                           type: object
                                         type: array
                                     type: object
