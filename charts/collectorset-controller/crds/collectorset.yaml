@@ -569,6 +569,123 @@ spec:
               properties:
                 affinity:
                   properties:
+                    podAffinity:
+                      properties:
+                        requiredDuringSchedulingIgnoredDuringExecution:
+                          items:
+                            properties:
+                              labelSelector:
+                                properties:
+                                  matchLabels:
+                                    additionalProperties:
+                                      type: string
+                                    type: object
+                                  matchExpressions:
+                                    items:
+                                      properties:
+                                        operator:
+                                          type: string
+                                        values:
+                                          items:
+                                            type: string
+                                          type: array
+                                        key:
+                                          type: string
+                                      type: object
+                                    type: array
+                                type: object
+                              namespaces:
+                                items:
+                                  type: string
+                                type: array
+                              topologyKey:
+                                type: string
+                              namespaceSelector:
+                                properties:
+                                  matchLabels:
+                                    additionalProperties:
+                                      type: string
+                                    type: object
+                                  matchExpressions:
+                                    items:
+                                      properties:
+                                        operator:
+                                          type: string
+                                        values:
+                                          items:
+                                            type: string
+                                          type: array
+                                        key:
+                                          type: string
+                                      type: object
+                                    type: array
+                                type: object
+                            required:
+                              - topologyKey
+                            type: object
+                          type: array
+                        preferredDuringSchedulingIgnoredDuringExecution:
+                          items:
+                            properties:
+                              weight:
+                                type: integer
+                              podAffinityTerm:
+                                properties:
+                                  labelSelector:
+                                    properties:
+                                      matchLabels:
+                                        additionalProperties:
+                                          type: string
+                                        type: object
+                                      matchExpressions:
+                                        items:
+                                          properties:
+                                            operator:
+                                              type: string
+                                            values:
+                                              items:
+                                                type: string
+                                              type: array
+                                            key:
+                                              type: string
+                                          type: object
+                                        type: array
+                                    type: object
+                                  namespaces:
+                                    items:
+                                      type: string
+                                    type: array
+                                  topologyKey:
+                                    type: string
+                                  namespaceSelector:
+                                    properties:
+                                      matchLabels:
+                                        additionalProperties:
+                                          type: string
+                                        type: object
+                                      matchExpressions:
+                                        items:
+                                          properties:
+                                            operator:
+                                              type: string
+                                            values:
+                                              items:
+                                                type: string
+                                              type: array
+                                            key:
+                                              type: string
+                                          type: object
+                                        type: array
+                                    type: object
+                                required: 
+                                  - topologyKey
+                                type: object
+                            required:
+                              - podAffinityTerm
+                              - weight
+                            type: object
+                          type: array
+                      type: object
                     podAntiAffinity:
                       properties:
                         requiredDuringSchedulingIgnoredDuringExecution:
