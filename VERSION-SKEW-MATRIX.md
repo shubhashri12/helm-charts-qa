@@ -66,6 +66,7 @@
 ## Collectorset Controller Releases
 | name | version | appVersion | dependencies | Compatible Kubernetes Versions |
 | :---- | :---- | :---- | :---- | :---- |
+| collectorset-controller | [5.3.0-rc01](https://github.com/logicmonitor/helm-charts-qa/releases/tag/collectorset-controller-5.3.0-rc01) | [v7.1.0-rc01](https://hub.docker.com/r/logicmonitor/collectorset-controller/tags?page=1&name=v7.1.0-rc01) | <ul> <li>lmutil@0.1.6 https://logicmonitor.github.io/helm-charts-qa</li> </ul> | >= 1.16.0-0 | 
 | collectorset-controller | [5.2.0-rc01](https://github.com/logicmonitor/helm-charts-qa/releases/tag/collectorset-controller-5.2.0-rc01) | [v7.1.0-rc01](https://hub.docker.com/r/logicmonitor/collectorset-controller/tags?page=1&name=v7.1.0-rc01) | <ul> <li>lmutil@0.1.6 https://logicmonitor.github.io/helm-charts-qa</li> </ul> | >= 1.16.0-0 | 
 | collectorset-controller | [5.1.0-rc02](https://github.com/logicmonitor/helm-charts-qa/releases/tag/collectorset-controller-5.1.0-rc02) | [v7.1.0-rc01](https://hub.docker.com/r/logicmonitor/collectorset-controller/tags?page=1&name=v7.1.0-rc01) | <ul> <li>lmutil@0.1.6 https://logicmonitor.github.io/helm-charts-qa</li> </ul> | >= 1.16.0-0 | 
 | collectorset-controller | [5.1.0-rc01](https://github.com/logicmonitor/helm-charts-qa/releases/tag/collectorset-controller-5.1.0-rc01) | [v7.1.0-rc01](https://hub.docker.com/r/logicmonitor/collectorset-controller/tags?page=1&name=v7.1.0-rc01) | <ul> <li>lmutil@0.1.6 https://logicmonitor.github.io/helm-charts-qa</li> </ul> | >= 1.16.0-0 | 
