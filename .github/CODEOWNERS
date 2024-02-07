@@ -1,20 +1,20 @@
 # Global owner
-*	@vkumbhar94 @kedarjapan @bpuri7
+*	@vkumbhar94 @bpuri7
 
 # argus directory owners
-charts/argus/   @vkumbhar94 @rohitphatak @shubhashri12 @sagarmamdapure @kedarjapan @bpuri7 @gurusiddha
+charts/argus/   @vkumbhar94 @rohitphatak @shubhashri12 @sagarmamdapure @bpuri7 @gurusiddha
 
 # collectorSet-controller directory owners
-charts/collectorset-controller/   @vkumbhar94  @rohitphatak @shubhashri12 @sagarmamdapure @kedarjapan @bpuri7 @gurusiddha
+charts/collectorset-controller/   @vkumbhar94  @rohitphatak @shubhashri12 @sagarmamdapure @bpuri7 @gurusiddha
 
 # lm-container directory owners
-charts/lm-container/    @vkumbhar94 @rohitphatak @shubhashri12 @sagarmamdapure @kedarjapan @bpuri7 @gurusiddha
+charts/lm-container/    @vkumbhar94 @rohitphatak @shubhashri12 @sagarmamdapure @bpuri7 @gurusiddha
 
 # lmutil directory owners
-charts/lmutil/    @vkumbhar94 @rohitphatak @shubhashri12 @sagarmamdapure @kedarjapan @bpuri7 @gurusiddha
+charts/lmutil/    @vkumbhar94 @rohitphatak @shubhashri12 @sagarmamdapure @bpuri7 @gurusiddha
 
 # lmotel directory owners
-charts/lmotel/ @avadhut123pisal @vkumbhar94 @khyatigandhi6
+charts/lmotel/ @avadhut123pisal @khyatigandhi6
 
 # lm-logs directory owners
-charts/lm-logs  @vkumbhar94 @rohitphatak @shubhashri12 @sagarmamdapure @bpuri7 @gurusiddha
+charts/lm-logs  @siddharthck
