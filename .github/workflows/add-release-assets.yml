@@ -1,8 +1,7 @@
 name: Generate and Upload Release assets
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [ created ]
 
 jobs:
   build:
