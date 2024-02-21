@@ -3,7 +3,7 @@ name: K8S Matrix - Helm Lint and Test Charts
 on: pull_request
 
 jobs:
-  lint-test:
+  lint-test-new:
     strategy:
       # max-parallel: 5
       matrix:
