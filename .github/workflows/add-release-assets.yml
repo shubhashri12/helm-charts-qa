@@ -77,9 +77,9 @@ jobs:
       - name: Pull Charts and Generate UI Template
         if: ${{ steps.get_chart.outputs.chartname == 'lm-container' }}
         run: |
-          helm repo add shubhashri-qa https://shubhashri12.github.io/helm-charts-qa
+          helm repo add logicmonitor-qa https://shubhashri12.github.io/helm-charts-qa
           helm repo update
-          helm pull shubhashri-qa/lm-container --untar --version ${{ steps.get_chart.outputs.chartversion }}
+          helm pull logicmonitor-qa/lm-container --untar --version ${{ steps.get_chart.outputs.chartversion }}
           ./scripts/lmui/lmui > lm-container-ui-jsonpaths.json
           cat lm-container-ui-jsonpaths.json
       - name: Upload ui template to release asset
