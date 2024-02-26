@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   lm-container:
   - apiVersion: v2
-    created: "2024-02-26T11:32:50.779047223Z"
+    created: "2024-02-26T11:44:26.96538618Z"
     dependencies:
     - condition: argus.enabled
       name: argus
@@ -46,7 +46,7 @@ entries:
       repository: https://logicmonitor.github.io/helm-charts-qa
       version: 0.1.9
     description: A Helm chart for Logicmonitor's Kubernetes monitoring solutions
-    digest: a8d90ce456d936122a03f7041d1fb5bb33ce4a45ec285141af98fe4d7eeb35f8
+    digest: 12ee5405b976669b267b8c5522889e885dec23d1989fde22874212ea35c7b65a
     icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
     kubeVersion: '>= 1.16.0-0'
     maintainers:
@@ -55,6 +55,6 @@ entries:
     name: lm-container
     type: application
     urls:
-    - https://github.com/shubhashri12/helm-charts-qa/releases/download/lm-container-7.1.0-rc06/lm-container-7.1.0-rc06.tgz
-    version: 7.1.0-rc06
-generated: "2024-02-26T11:32:50.779055268Z"
+    - https://github.com/shubhashri12/helm-charts-qa/releases/download/lm-container-7.1.0-rc01/lm-container-7.1.0-rc01.tgz
+    version: 7.1.0-rc01
+generated: "2024-02-26T11:44:26.965394836Z"
