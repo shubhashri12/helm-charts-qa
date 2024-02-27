@@ -2,6 +2,62 @@ apiVersion: v1
 entries:
   lm-container:
   - apiVersion: v2
+    created: "2024-02-27T04:46:36.674845693Z"
+    dependencies:
+    - condition: argus.enabled
+      name: argus
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      tags:
+      - logicmonitor
+      - argus
+      - monitoring
+      version: 9.0.0-rc04
+    - condition: collectorset-controller.enabled
+      name: collectorset-controller
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      tags:
+      - logicmonitor
+      - collectorset-controller
+      - monitoring
+      version: 8.0.0-rc05
+    - condition: lm-logs.enabled
+      name: lm-logs
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      tags:
+      - logicmonitor
+      - lm-logs
+      - monitoring
+      - pod-logs-collection
+      - k8s-events-collection
+      version: 0.5.1-rc01
+    - condition: lmotel.enabled
+      name: lmotel
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      tags:
+      - logicmonitor
+      - lmotel
+      - monitoring
+      version: 1.8.0-rc01
+    - condition: kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.13.0
+    - name: lmutil
+      repository: https://logicmonitor.github.io/helm-charts-qa
+      version: 0.1.9
+    description: A Helm chart for Logicmonitor's Kubernetes monitoring solutions
+    digest: 22bb597874f1aff69a0ad74fd3dfec3199906aae0ef98b455fbb1b8fac0c6b6a
+    icon: https://logicmonitor.github.io/helm-charts-qa/lm_logo.png
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: argus@logicmonitor.com
+      name: LogicMonitor
+    name: lm-container
+    type: application
+    urls:
+    - https://github.com/shubhashri12/helm-charts-qa/releases/download/lm-container-7.1.0-rc05/lm-container-7.1.0-rc05.tgz
+    version: 7.1.0-rc05
+  - apiVersion: v2
     created: "2024-02-26T13:20:40.4665992Z"
     dependencies:
     - condition: argus.enabled
@@ -225,4 +281,4 @@ entries:
     urls:
     - https://github.com/shubhashri12/helm-charts-qa/releases/download/lm-container-7.1.0-rc01/lm-container-7.1.0-rc01.tgz
     version: 7.1.0-rc01
-generated: "2024-02-26T13:20:40.466623345Z"
+generated: "2024-02-27T04:46:36.674889104Z"
