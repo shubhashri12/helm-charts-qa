@@ -65,6 +65,7 @@ jobs:
         if: steps.list-changed.outputs.arguschanged == 'true'
         run: |
           kubectl apply -f charts/collectorset-controller/crds/collectorset.yaml
+          ct install --config ct.yaml --charts charts/collectorset-controller
           ct install --config ct.yaml --charts charts/argus
           kubectl delete -f charts/collectorset-controller/crds/collectorset.yaml
 
