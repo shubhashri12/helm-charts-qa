@@ -21,7 +21,7 @@ rbac:
 # The public etcd discovery token used to add etcd hosts to the cluster device group.
 image:
   registry: ""
-  repository: ""
+  repository: "8976237489"
   name: collectorset-controller
   pullPolicy: ""
   # Overrides the image tag whose default is the chart appVersion.
