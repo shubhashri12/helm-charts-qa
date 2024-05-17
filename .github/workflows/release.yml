@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - 'release/lm-container-*-hotfix'
 
 jobs:
   release:
